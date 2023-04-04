@@ -1,7 +1,7 @@
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <base href="https://stellar-raindrop-e39a3a.netlify.app">
+        <!-- <base href="https://stellar-raindrop-e39a3a.netlify.app"> -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +12,25 @@
     <body class="body">
         
         <div class="container">
-            <img src="Images/shield hero.jpg" alt="">
+            <!-- <img src="Images/shield hero.jpg" alt=""> -->
         </div>
 
     </body>
 
     <script>
-        // var folder = "Images";
+        var folder = "Images";
 
-        // $.ajax({
-        //     url : folder,
-        //     success: function (data) {
-        //         console.log(data)
-        //         $(data).find("a").attr("href", function (i, val) {
-        //             if( val.match(/\.(jpe?g|png|gif|webp)$/) ) { 
-        //                 $(".container").append( "<img src='" + val +"'>" );
-        //             } 
-        //         });
-        //     }
-        // });
+        $.ajax({
+            url : folder,
+            success: function (data) {
+                console.log(data)
+                $(data).find("a").attr("href", function (i, val) {
+                    if( val.match(/\.(jpe?g|png|gif|webp)$/) ) { 
+                        $(".container").append( "<img src='" + val +"'>" );
+                    } 
+                });
+            }
+        });
     </script>
     <script src="script.js"></script>
     </html>
