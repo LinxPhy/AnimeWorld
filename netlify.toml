@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/Images/*"
+  to = "/Images/:splat"
+  status = 200
+  force = true
