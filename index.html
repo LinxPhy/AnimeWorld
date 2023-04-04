@@ -23,8 +23,7 @@
             success: function (data) {
                 $(data).find("a").attr("href", function (i, val) {
                     if( val.match(/\.(jpe?g|png|gif|webp)$/) ) { 
-                        console.log("<img src='"+ folder + val +"'>")
-                        $(".container").append( "<img src='" + val +"'>" );
+                        $(".container").append( "<img src='Images/" + val +"'>" );
                     } 
                 });
             }

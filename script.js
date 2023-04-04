@@ -19,8 +19,6 @@ pannableDiv.addEventListener('mousemove', (e) => {
     if (isDragging) {
         pannableDiv.style.left = `${e.pageX - x}px`;
         pannableDiv.style.top = `${e.pageY - y}px`;
-
-       console.log(pannableDiv.style.left, pannableDiv.style.top)
     }
 });
 
